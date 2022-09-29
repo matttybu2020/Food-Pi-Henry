@@ -61,7 +61,7 @@ const InfoApiDbTotal = async () => {
     const apiInfoTotal = await getDataApi();
     const dbrecipe = await infoBaseDato();
     const infoTotal = apiInfoTotal.concat(dbrecipe);
-    return infoTotal;
+    return infoTotal
   } catch (error) {
     console.log(error);
   }
@@ -69,4 +69,4 @@ const InfoApiDbTotal = async () => {
 
 
 
-module.export = InfoApiDbTotal;
+module.exports = InfoApiDbTotal

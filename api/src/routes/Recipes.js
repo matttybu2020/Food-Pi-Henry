@@ -1,8 +1,8 @@
 const Router = require('express');
 const router = Router()
-const infoTotal = require('../Controllers/getDataTotal.js')
+const InfoApiDbTotal = require('../Controllers/getDataTotal.js')
 const {Recipe,Diet} = require('../db')
-const { Op } = require('sequelize');
+//const { Op } = require('sequelize');
 
 
 
@@ -11,7 +11,7 @@ const { Op } = require('sequelize');
 
 router.get('/',async (req,res)=>{
     const{ name } = req.query
-    const recipes=   await infoTotal()
+    const recipes=   await InfoApiDbTotal()
     try {
     if(name){
 
@@ -64,6 +64,13 @@ router.post('/',async (req,res)=>{
   try {
   if (!name || !summary || !healthScore || !steps){
     return res.status(404).json({msg: "Faltan enviar datos"})
+
+    /*
+     if (!name) return res.status(400).send({error: 'Debe ingresar el name para la receta'});
+    if (!summary) return res.status(400).send({error: 'Debe ingresar un summary del receta'});
+    
+    
+    */
   }
       const newRecipe = await Recipe.create({
           name,
