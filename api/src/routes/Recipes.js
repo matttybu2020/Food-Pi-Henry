@@ -28,7 +28,6 @@ router.get('/',async (req,res)=>{
 }) 
 
 
-
 //! Busqueda de receta por id
 
 router.get('/:id',async (req,res)=>{
@@ -62,7 +61,7 @@ router.post('/',async (req,res)=>{
      createdInDb,
     } = req.body
   try {
-  if (!name || !summary || !healthScore || !steps){
+  if (!name || !summary){
     return res.status(404).json({msg: "Faltan enviar datos"})
 
     /*
@@ -109,10 +108,6 @@ router.delete('/:id', (req, res, next) =>{
       next(error)
   }
 });
-
-
-
-
 
 
 
