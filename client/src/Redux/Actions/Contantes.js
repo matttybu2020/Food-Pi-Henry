@@ -9,3 +9,5 @@ export const SAVE_PAGE="SAVE_PAGE"
 export const CLEAN_FILTER="CLEAN_FILTER"
 
 export const GET_NAME = "GET_NAME"
+
+export const GET_RECIPES_BY_ID = "GET_RECIPES_BY_ID"

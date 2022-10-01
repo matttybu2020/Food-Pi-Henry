@@ -32,7 +32,7 @@ router.get('/',async (req,res)=>{
 
 router.get('/:id',async (req,res)=>{
   const {id} = req.params
-  const recipes=   await infoTotal()
+  const recipes = await InfoApiDbTotal()
   try {
       if(id){
           const recipesId = recipes.filter(el=>el.id == id)

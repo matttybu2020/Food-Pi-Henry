@@ -1,5 +1,5 @@
 
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME } from "../Actions/Contantes"
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID } from "../Actions/Contantes"
 
 
 const initialState = {
@@ -30,6 +30,16 @@ function rootReducer(state = initialState, action) {
               detail: action.payload
             }
 
+
+
+          case GET_RECIPES_BY_ID:
+            return{
+                ...state,
+                detail: action.payload
+            }
+
+          
+
           case SAVE_PAGE:
             return {
               ...state,
@@ -40,8 +50,7 @@ function rootReducer(state = initialState, action) {
                 ...state,
                 recipes: action.payload
               }
-        
-    
+              
           default:
             return { ...state };
         }

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME} from "../Actions/Contantes"
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID} from "../Actions/Contantes"
 
 
 
@@ -101,4 +101,28 @@ export function getName(name){
 
         }
     };
+}
+
+
+// Detalles por Id
+
+/*
+export function getRecipesById(id){
+    return async function(dispatch){
+        const resul = await axios (`http://localhost:3001/recipes/${id}`)
+       // console.log(resul)
+        dispatch({
+            type:GET_RECIPES_BY_ID,
+            payload: resul.data
+        })
+   
+   
+    }
+}
+*/
+
+export const getRecipesById= (id) =>(dispatch) =>{
+    return fetch(`http://localhost:3001/recipes/${id}`)
+    .then((r)=>r.json())
+    .then((data)=>dispatch({type:GET_RECIPES_BY_ID,payload:data}))
 }

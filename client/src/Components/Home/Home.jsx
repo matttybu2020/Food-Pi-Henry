@@ -94,7 +94,7 @@ const beforePage = () => {
  {  
     currentRecipe?.map(el=>{
         return(
-         < Link onClick={(e)=>handlePage(e)} to = {'/detailsRecipes/' + el.id }>
+         < Link onClick={(e)=>handlePage(e)} to = {'/recipes/' + el.id }>
             <CardRecipe key ={el.id}
              name ={el.name}
              image ={el.image}
