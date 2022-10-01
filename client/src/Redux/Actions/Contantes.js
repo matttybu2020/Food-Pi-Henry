@@ -7,3 +7,5 @@ export const GET_ALL_TYPES="GET_ALL_TYPES"
 export const SAVE_PAGE="SAVE_PAGE"
 
 export const CLEAN_FILTER="CLEAN_FILTER"
+
+export const GET_NAME = "GET_NAME"

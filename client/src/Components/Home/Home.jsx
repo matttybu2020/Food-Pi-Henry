@@ -5,9 +5,9 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import {getAllRecipes,getAllDiets,savePage,cleanFilter} from "../../Redux/Actions/index"
 import Paginado from "../Paginado/Paginado.jsx";
-//import SearchBar from "../SearchBar/SearchBar.jsx";
+import SearchBar from "../SearchBar/SearchBar.jsx";
 import CardRecipe from "../CardRecipe/CardRecipe.jsx"
-
+import NavBar from "../NavBar/NavBar.jsx";
 
 
 
@@ -53,6 +53,19 @@ const paginado = (pageNumber) =>{
     dispatch(getAllRecipes())
   }
 
+ // para next y siguiente
+ const nextPage = () => {
+  setCurrentPage(currentPage + 1);
+};
+const beforePage = () => {
+  if (currentPage > 1) setCurrentPage(currentPage - 1);
+};
+
+
+
+
+
+
 
     return (
     
@@ -60,12 +73,20 @@ const paginado = (pageNumber) =>{
             <button className="button-recipe"onClick={(e)=>{handleRefresh(e)}}>Recargar</button>
 
           
-
+<NavBar />
+<div className="searchbar-container">
+         <SearchBar/>
+         </div>
        
       <Paginado
                 recipesPerPage={recipesPerPage}
                 recipes={recipes.length}
-                paginado ={paginado}            
+                paginado ={paginado} 
+                currentPage={currentPage}
+                beforePage={beforePage}
+                nextPage={nextPage}
+                
+
                 />
 
          

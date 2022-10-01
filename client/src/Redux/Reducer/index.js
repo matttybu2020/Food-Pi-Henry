@@ -1,5 +1,5 @@
 
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER } from "../Actions/Contantes"
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME } from "../Actions/Contantes"
 
 
 const initialState = {
@@ -35,6 +35,12 @@ function rootReducer(state = initialState, action) {
               ...state,
               pages: action.payload
             }
+            case GET_NAME:
+              return {
+                ...state,
+                recipes: action.payload
+              }
+        
     
           default:
             return { ...state };

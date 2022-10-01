@@ -1,5 +1,6 @@
 import axios from "axios";
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER} from "../Actions/Contantes"
+
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME} from "../Actions/Contantes"
 
 
 
@@ -80,4 +81,24 @@ export function cleanFilter(){
         type:CLEAN_FILTER,
         payload:[]
     }
+}
+
+
+//*Ruta de Busqueda po nombre
+
+
+export function getName(name){
+    return async function(dispatch){
+        try {
+            const resul = await axios.get(`http://localhost:3001/recipes?name=${name}`)
+           console.log(resul)
+           return dispatch ({
+            type: GET_NAME,
+            payload: resul.data
+           });
+        } catch  {
+            return alert("No se pudo encontrar la Dieta");
+
+        }
+    };
 }

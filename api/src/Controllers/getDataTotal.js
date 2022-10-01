@@ -22,7 +22,7 @@ const getDataApi = async () => {
         steps: el.analyzedInstructions[0]?.steps.map((el) => el.step),
       };
     });
-    console.log(recipeInfo);
+   // console.log(recipeInfo);
     return recipeInfo;
   } catch (error) {
     console.log(error);
