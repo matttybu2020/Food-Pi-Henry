@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID} from "../Actions/Contantes"
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID,FILTER_BY_TYPES_DIETS,ORDER_NAME,ORDER_SCORE,FILTER_ORIGEN} from "../Actions/Contantes"
 
 
 
@@ -125,4 +125,48 @@ export const getRecipesById= (id) =>(dispatch) =>{
     return fetch(`http://localhost:3001/recipes/${id}`)
     .then((r)=>r.json())
     .then((data)=>dispatch({type:GET_RECIPES_BY_ID,payload:data}))
+}
+
+
+//*Filtrados
+
+//*Filtrado por Dietas
+
+export function filterByTypesDiets(payload){
+    console.log(payload)
+   return{
+           type: FILTER_BY_TYPES_DIETS,
+           payload
+   }
+            
+}
+
+//*Filtrado por nombre
+
+export function orderName(payload){
+    return{
+        type: ORDER_NAME,
+        payload
+    }
+}
+
+
+
+//* Fitrado por Score
+
+export function orderScore(payload){
+    return{
+        type:ORDER_SCORE,
+        payload
+    }
+}
+
+
+//* Filtrado por Origen 
+
+export function filterOrigen(payload){
+    return({
+        type:FILTER_ORIGEN,
+        payload
+    })
 }
