@@ -170,3 +170,13 @@ export function filterOrigen(payload){
         payload
     })
 }
+
+//* Post de creacion
+
+export function postRecipe(payload){
+    return async function(dispatch){
+        const resp = await axios.post("http://localhost:3001/recipes",payload)
+        console.log(resp)
+        return resp
+    }
+}

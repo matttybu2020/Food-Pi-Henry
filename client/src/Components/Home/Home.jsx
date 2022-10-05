@@ -8,7 +8,7 @@ import Paginado from "../Paginado/Paginado.jsx";
 import SearchBar from "../SearchBar/SearchBar.jsx";
 import CardRecipe from "../CardRecipe/CardRecipe.jsx"
 import NavBar from "../NavBar/NavBar.jsx";
-
+import "./Home.css"
 
 
 
@@ -103,7 +103,7 @@ function handleFilterByOrigen(e){
 
     return (
     
-        <div className="contenedor-principal">
+        <div className="contenedor">
             <button className="button-recipe"onClick={(e)=>{handleRefresh(e)}}>Recargar</button>
 
             <div className="navbar-container">
