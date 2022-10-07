@@ -1,18 +1,17 @@
 .con-about{
     margin-top: 100x;
-    font-family: 'Silkscreen', cursive;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(243, 221, 226);
-    background: radial-gradient(circle, rgba(255, 223, 230, 0.846) 0%, rgba(42,15,54,1) 89%);
+    background-image: url('https://img.freepik.com/fotos-premium/textura-fondo-marmol-blanco_42682-249.jpg?w=2000');
 }
 
 .con-about h1 {
     font-size:x-large;
-    color: rgb(203, 242, 242);
-    text-shadow: 2px 4px black;
+    color: rgb(16, 17, 17);
+    
 }
 
 .homeLink{

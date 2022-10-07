@@ -45,7 +45,7 @@ return( // renderizamos el detalle
     <span className="tipo-dieta negrita">Diets:</span>
     </div>
     <div className="container-diets">
-    <span>{myRecipe[0].diets.map(el=> <p className="button-recipe">{el}</p>)}</span>
+    <span>{myRecipe[0].diets.map(el=> <p className="button-recipe1">{el}</p>)}</span>
     </div>
     <div className="health-score">
     <p><p className="negrita">HealthScore:</p> {myRecipe[0].healthScore}</p>

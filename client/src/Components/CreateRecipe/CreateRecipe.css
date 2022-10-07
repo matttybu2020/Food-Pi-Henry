@@ -7,7 +7,7 @@
 .container-form{
     width:40%;
     height:auto;
-    background-color: #b5bdb5;
+    background-image: url('http://firenzestone.com/assets/uploads/thumb_view_121441518cf2d163b54c6762b2c31727.png');
     border-radius: 5px;
     margin: 3rem auto;
     -webkit-box-shadow: 10px 10px 16px 0px rgb(110, 115, 111);
@@ -60,7 +60,7 @@ font-weight: bold;
 .button-recipe{
     appearance: none;
     background-color: #5a5e5b;
-    border: 1px solid rgba(27, 31, 35, .15);
+    
     border-radius: 6px;
     box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
     box-sizing: border-box;
@@ -80,9 +80,7 @@ font-weight: bold;
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
-    -webkit-box-shadow: 20px 18px 20px -1px rgba(183,194,185,1);
--moz-box-shadow: 20px 18px 20px -1px rgba(183,194,185,1);
-box-shadow: 20px 18px 20px -1px rgba(183,194,185,1);
+    
   }
   
   .button-recipe:focus:not(:focus-visible):not(.focus-visible) {

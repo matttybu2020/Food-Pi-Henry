@@ -1,7 +1,7 @@
 
 
 .container{
-    background-image: url('../../Img/Home.png');
+    background-image: url('http://firenzestone.com/assets/uploads/thumb_view_121441518cf2d163b54c6762b2c31727.png');
     width: 80%;
     height: auto;
     margin: 5% auto 5% auto;
@@ -96,4 +96,29 @@
 .cargador{
     justify-content: center;
     align-items: center;
+}
+
+.button-recipe1{
+    appearance: none;
+    background-color: #5a5e5b;
+    
+    border-radius: 6px;
+    box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+   
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
 }

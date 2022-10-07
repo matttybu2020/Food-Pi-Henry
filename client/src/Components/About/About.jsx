@@ -1,5 +1,5 @@
 import React from "react";
-//import imagen from "../../img/imagen.gif";
+import imagen from "../../Img/imagen.jpg";
 import "./About.css";
 import NavBar from "../NavBar/NavBar.jsx";
 import Github from "../../Img/Github.gif";
@@ -15,8 +15,15 @@ export default function About() {
       <div className="con-about">
         <h1>👨‍💻 Proyecto Individual 👨‍💻</h1>
         <h1> Food </h1>
-        <p>""</p>
+        <div className="div-foto">
+          <img src={imagen} alt="foto"></img>
+        </div>
         <h1>Gonzalez Matias Enrique 🧑‍💻</h1>
+        <h2>Tegnologias Usadas</h2>
+        <h3><p>👨‍💻 JavaScript</p>
+        <p>⚙️ React,Redux</p>
+        <p>👁️ CSS,HTML</p>
+        <p>💽 SQL, Node JS, Express, Sequelize, PostgreSQL</p></h3>
         <div className="div-foto">
           
         </div>
@@ -30,6 +37,7 @@ export default function About() {
           >
             <img className="imgLink" src={Linkedin} alt="lol" />
           </a>
+          
         </div>
       </div>
       </div>
