@@ -1,6 +1,11 @@
 .container3{
-    background-image: url('../../Img/Create.jpeg')
-    
+    background: url('../../Img/Create.jpeg') no-repeat 2% 40% fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+   padding: 1rem;
+    z-index: -2;
+
 }
 
 
@@ -8,6 +13,9 @@
     width:40%;
     height:auto;
     background-image: url('http://firenzestone.com/assets/uploads/thumb_view_121441518cf2d163b54c6762b2c31727.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     border-radius: 5px;
     margin: 3rem auto;
     -webkit-box-shadow: 10px 10px 16px 0px rgb(110, 115, 111);

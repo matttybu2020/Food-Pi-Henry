@@ -1,12 +1,22 @@
 
 
 .contenedor{
-    background-image: url('../../Img/Home.png');
+    background: url('../../Img/Home.png')no-repeat 2% 40% fixed;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+
+
+    background-size: cover;
 }
+
+
+
+
 
 .contenedor-cards{
     

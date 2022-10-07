@@ -112,7 +112,7 @@ function handleFilterByOrigen(e){
 
 <div className="searchbar-container">
          <SearchBar/>
-         <div className="contendor-buttonn">
+         <div className="contendor-button">
          <button className="button-recipe"onClick={(e)=>{handleRefresh(e)}}>Recargar</button>
          </div>
         
@@ -190,7 +190,7 @@ function handleFilterByOrigen(e){
     })
   } 
   
-  {recipes.length === 0 && <p>RECETAS NO ENCONTRADAS</p>}
+  {recipes.length === 0 && <p>No hay ninguna receta</p>}
 </div>
     </div>
  )
