@@ -4,6 +4,7 @@ import { Link,} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRecipesById,cleanFilter, } from "../../Redux/Actions/index";
 import { useEffect } from "react";
+import "./DetailsRecipe.css"
 
 
 
@@ -71,11 +72,11 @@ return( // renderizamos el detalle
    
 
          </div>:<img className="cargador"
-         src="https://th.bing.com/th/id/R.4d3652eb2e65b9560020e72a3e51dcb5?rik=TN4q6NeXsR3llQ&riu=http%3a%2f%2fwww.gifde.com%2fgif%2fotros%2fdecoracion%2fcargando-loading%2fcargando-loading-041.gif&ehk=5k7Cxm0aV2Rb1zXFwfB%2boV3G%2bm7hc9e6UnHwx84JUBU%3d&risl=&pid=ImgRaw&r=0" alt="not found" />
+         src="https://retchhh.files.wordpress.com/2015/03/loading1.gif" alt="not found" />
               
    }
 <div className="button-containerone">
-  <Link to = '/home'><button className="button-recipe">Volver Al Home</button></Link>
+  <Link to = '/home'><button className="button-recipe">Volver</button></Link>
   </div>
   </div>
   </div>

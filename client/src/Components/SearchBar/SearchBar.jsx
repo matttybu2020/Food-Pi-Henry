@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getName} from "../../Redux/Actions/index";
+import "./SearchBar.css"
 
 
 
@@ -19,7 +20,7 @@ function handleInputChange(e){
  function handleSubmit(e){
     e.preventDefault()
     if(name.length===0){
-        alert("Porfavor escriba un receta para iniciar la búsqueda")
+        alert("Por favor escriba un receta para iniciar la búsqueda")
     }else{
     dispatch(getName(name))
     setName("")

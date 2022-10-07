@@ -1,4 +1,5 @@
 import React from "react";
+import "./CardRecipe.css";
 
 export default function CardRecipe({ name, image, diets }) {
   return (

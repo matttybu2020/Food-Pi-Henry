@@ -104,13 +104,18 @@ function handleFilterByOrigen(e){
     return (
     
         <div className="contenedor">
-            <button className="button-recipe"onClick={(e)=>{handleRefresh(e)}}>Recargar</button>
+           
 
             <div className="navbar-container">
 <NavBar />
 </div>
+
 <div className="searchbar-container">
          <SearchBar/>
+         <div className="contendor-buttonn">
+         <button className="button-recipe"onClick={(e)=>{handleRefresh(e)}}>Recargar</button>
+         </div>
+        
          </div>
 
 
@@ -147,7 +152,7 @@ function handleFilterByOrigen(e){
             <option value= 'max'>Max to Min</option>
          </select>
 
-         <select onChange={handleFilterByOrigen}>
+         <select onChange={handleFilterByOrigen} className="filtros">
            <option value="All">Todos</option>
             <option value = "created">Created</option>
             <option value = "api">Api</option>

@@ -7,3 +7,52 @@
     align-items: center;
     flex-direction: column;
 }
+
+.contenedor-cards{
+    
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: auto auto auto auto ;
+    text-align: center;
+   
+}
+.contenedor-cards a {
+text-decoration: none;
+}
+
+
+
+
+.searchbar-container{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 1rem 0;
+    justify-content: center;
+    display: flex;
+  
+   }
+  
+
+   .contenedor-filtros{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin:1rem 0  1rem 0;
+    justify-content: center;
+ }
+
+ .contenedor-filtros select{
+    margin-right: 0.5rem;
+ }
+ .filtros{
+    border: hidden;
+    padding: 0.3rem;
+    border-bottom: 1px solid black;
+     -webkit-box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
+-moz-box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
+box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
+ }
+
+
+
+ 

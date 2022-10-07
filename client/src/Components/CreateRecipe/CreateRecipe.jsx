@@ -178,7 +178,7 @@ return (
     <div className="container3">
         <div className="container-form">
         <div className="title-container">
-        <h1 className="title">CREA TU RECETA</h1>
+        <h1 className="title">Receta Nueva</h1>
         </div>
      <form onSubmit={handleSubmit} className="form">
     <div className="elements-form">
@@ -260,7 +260,7 @@ return (
          onClick={()=>handleDelete(el)}>{el}</button></li>)}</ul>
         </div>
         <div className="button-container">
-        <Link to = 'home'><button className="button-recipe">Volver atrás</button></Link>
+        <Link to = 'home'><button className="button-recipe">Volver </button></Link>
         </div>
 
         </form>

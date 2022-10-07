@@ -1,0 +1,45 @@
+
+.cards-recetas{
+    cursor:pointer;
+    display: block;
+    border-radius: 1px;
+    width: 90%;
+    height: 90%;
+    margin-left: 2rem;
+    padding:0.8rem ;
+    color: rgb(8, 7, 7);
+    -webkit-box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    text-decoration: none;
+
+}
+
+.name-recipe{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+.image{
+    width:100%;
+   height:auto;
+
+}
+
+.name-recipe a{
+    text-decoration: none;
+}
+
+.diets-recipe{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 0.9rem;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+}
+

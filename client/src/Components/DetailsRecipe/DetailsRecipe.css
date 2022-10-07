@@ -1,0 +1,99 @@
+
+
+.container{
+    background-image: url('../../Img/Home.png');
+    width: 80%;
+    height: auto;
+    margin: 5% auto 5% auto;
+    background-color: #dae1da;
+    border-radius: 5px;
+-webkit-box-shadow: 10px 10px 16px 0px rgb(47, 49, 48);
+    -moz-box-shadow: 10px 10px 16px 0px rgb(80, 84, 81);
+    box-shadow: 10px 10px 16px 0px rgb(55, 57, 56);
+    padding: 2rem;
+
+    
+}
+.title{
+    justify-content: center;
+  align-items: center;
+}
+.container-imagen{
+    width: 100%;
+    height: auto; 
+    
+}
+
+.imagen-detalle{
+    margin: 3rem auto;
+    display: block;
+}
+
+.container-dishtypes{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.container-diets{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+
+.container-diets p{
+    margin-left: 0.5rem;
+}
+     
+.tipo-dieta{
+ text-align: center;
+}
+
+.health-score{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.summary-container{
+    justify-content:justify;
+    width:100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.summary-container p{
+    line-height: 1,5rem;
+}
+
+.steps-container{
+    width: 100%;
+    height: auto;
+    
+}
+
+.items-lista{
+    margin-bottom: 0.5rem;
+
+}
+
+.button-containerone{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.negrita{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cargador{
+    justify-content: center;
+    align-items: center;
+}

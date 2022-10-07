@@ -1,0 +1,18 @@
+.navbar-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.navbar-div button{
+    
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.navbar-div button:hover {
+    background-color: rgb(205, 210, 217);
+    color:rgb(247, 251, 251);
+   
+}

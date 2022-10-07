@@ -8,10 +8,10 @@ function NavBar() {
     return (
         <>
         <div className="navbar-div">
-                <NavLink to="/"><button>Principal</button></NavLink>
-                <NavLink to="/home"><button>Home</button></NavLink>
-                <NavLink to="/createRecipe"><button>CrearRecipe</button></NavLink>
-                <NavLink to="/about"><button>About</button></NavLink>
+                <NavLink to="/"><button className='button-recipe'>Principal</button></NavLink>
+                <NavLink to="/home"><button className='button-recipe'>Home</button></NavLink>
+                <NavLink to="/createRecipe"><button className='button-recipe'>CrearRecipe</button></NavLink>
+                <NavLink to="/about"><button className='button-recipe'>About</button></NavLink>
         </div>
        
         </>

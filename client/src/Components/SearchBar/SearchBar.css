@@ -1,0 +1,17 @@
+.searchbar{
+    width: 50%;
+    padding-bottom: 0.5rem;
+     }
+    
+     .buscador{
+      width:40%;
+      margin-right: 0.5rem;
+      border:hidden;
+      text-align: center;
+      padding: 0.2rem 0 0.2rem 0;
+      border-bottom: 1px solid black;
+      -webkit-box-shadow: 10px 10px 16px 0px rgb(167, 174, 169);
+      -moz-box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
+      box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
+     }
+    

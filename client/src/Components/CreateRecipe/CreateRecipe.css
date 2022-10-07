@@ -1,3 +1,164 @@
 .container3{
     background-image: url('../../Img/Create.jpeg')
+    
 }
+
+
+.container-form{
+    width:40%;
+    height:auto;
+    background-color: #b5bdb5;
+    border-radius: 5px;
+    margin: 3rem auto;
+    -webkit-box-shadow: 10px 10px 16px 0px rgb(110, 115, 111);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(110, 115, 111);
+    box-shadow: 10px 10px 16px 0px rgba(110, 115, 111);
+    padding-bottom: 1rem;
+    
+}
+
+.title-container{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem
+}
+
+.elements-form{
+    width: 100%;
+    height: auto;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.label{
+text-align: start;
+align-items: flex-start;
+width:20%;
+padding: 0.2rem;
+height: auto;
+font-weight: bold;
+}
+
+.input{
+    width: 60%;
+    border: hidden;
+    margin-left: 1rem;
+    -webkit-box-shadow: 10px 10px 16px 0px rgb(225, 248, 231);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
+    box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
+    border-bottom: 1px solid black;
+}
+
+.button-recipe{
+    appearance: none;
+    background-color: #5a5e5b;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-shadow: 20px 18px 20px -1px rgba(183,194,185,1);
+-moz-box-shadow: 20px 18px 20px -1px rgba(183,194,185,1);
+box-shadow: 20px 18px 20px -1px rgba(183,194,185,1);
+  }
+  
+  .button-recipe:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-recipe:hover {
+    background-color: #9b9f9c;
+  }
+  
+  .button-recipe:focus {
+    box-shadow: rgba(104, 107, 105, 0.4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-recipe:disabled {
+    background-color: #868b87;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-recipe:active {
+    background-color: #edf8f2;
+    box-shadow: rgba(230, 241, 232, 0.2) 0 1px 0 inset;
+  }
+
+  .select-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .select{
+    width:70%;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    border:hidden;
+    border-bottom: 1px black solid;
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
+    box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
+
+  }
+
+
+  .button-container{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .lista-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .lista{
+    list-style: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .danger {
+    color: rgb(12, 12, 12);
+    font-size: 9px;
+    padding: 0 2rem;
+    width: 35%;
+  }

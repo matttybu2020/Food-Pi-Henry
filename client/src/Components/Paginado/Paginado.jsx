@@ -16,7 +16,7 @@ export default function Paginado({recipesPerPage,recipes,paginado,currentPage,be
 
   return (
     <nav>
-      <ul className="paginado">
+      <ul className={style.paginado}>
         <button
           className={
             currentPage === "Anterior" ? style.botonSeleccionado : style.boton
