@@ -21,7 +21,7 @@ export default function Paginado({recipesPerPage,recipes,paginado,currentPage,be
           className={
             currentPage === "Anterior" ? style.botonSeleccionado : style.boton
           }onClick={beforePage}
-        >Anterior</button>
+        >{"<<"}</button>
 
         {pageNumbers &&
           pageNumbers.map((number) => (
@@ -35,7 +35,7 @@ export default function Paginado({recipesPerPage,recipes,paginado,currentPage,be
         <button
           className={ currentPage === "Proximo" ? style.botonSeleccionado : style.boton
           }onClick={nextPage}disabled={currentPage >= pageNumbers.length}
-        > Proximo</button>
+        > {">>"}</button>
       </ul>
     </nav>
   );

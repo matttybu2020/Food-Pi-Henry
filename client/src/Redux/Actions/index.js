@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID,FILTER_BY_TYPES_DIETS,ORDER_NAME,ORDER_SCORE,FILTER_ORIGEN} from "../Actions/Contantes"
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID,FILTER_BY_TYPES_DIETS,ORDER_NAME,ORDER_SCORE,FILTER_ORIGEN,ADD_FAVORITES,REMOVE_FAVORITES} from "../Actions/Contantes"
 
 
 
@@ -180,3 +180,23 @@ export function postRecipe(payload){
         return resp
     }
 }
+
+
+
+
+
+//* Favoritos Prueba
+
+
+export function add_Favorites (data) {
+    return { type: ADD_FAVORITES, payload: data };
+  };
+  
+
+
+export function remove_Favorites(id){
+    return { type: REMOVE_FAVORITES, payload: id };
+  };
+  
+ 
+  

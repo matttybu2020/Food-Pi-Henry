@@ -122,7 +122,7 @@ function handleFilterByOrigen(e){
 
          <div className="contenedor-filtros">
          <select onChange={handleFilterByDiets} className="filtros">
-           <option value = 'tipos'>Filter by type</option>
+           <option value = 'tipos'>Filtrar por tipo</option>
           
           <option value="gluten free">gluten free</option>
            <option value ="dairy free">dairy free</option>
@@ -141,20 +141,20 @@ function handleFilterByOrigen(e){
     
          </select>
          <select onChange={(e)=>handleSortByName(e)}  className="filtros">
-            <option value ='All'>Order alphabetically</option>
+            <option value ='All'>Ordenar alfabéticamente</option>
             <option value = 'asc'>A:Z</option>
             <option value = 'des'>Z:A</option>
          </select>
 
          <select onChange={handleSortByScore} className="filtros">
-            <option value = 'default'>Order by Health Score</option>
+            <option value = 'All'>Ordenar por puntaje de salud</option>
             <option value= 'min'>Min to Max</option>
             <option value= 'max'>Max to Min</option>
          </select>
 
          <select onChange={handleFilterByOrigen} className="filtros">
            <option value="All">Todos</option>
-            <option value = "created">Created</option>
+            <option value = "created">Creados</option>
             <option value = "api">Api</option>
          </select>
          
@@ -181,8 +181,8 @@ function handleFilterByOrigen(e){
         return(
          < Link onClick={(e)=>handlePage(e)} to = {'/recipes/' + el.id }>
             <CardRecipe key ={el.id}
+             image ={el.image} 
              name ={el.name}
-             image ={el.image}
              diets ={el.diets}
              />
             </Link>

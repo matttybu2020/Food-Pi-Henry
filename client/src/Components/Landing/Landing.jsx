@@ -8,7 +8,7 @@ export default function Landing(){
         <div className="landing_container">
         <div className="background">
         <Link to ='/home'>              
-        <button className="button">Welcome </button>
+        <button className="button1">Ingresar</button>
             </Link>
             </div>
     </div>

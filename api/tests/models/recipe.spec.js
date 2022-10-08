@@ -2,7 +2,8 @@ const { Recipe, conn } = require('../../src/db.js');
 const { expect } = require('chai');
 
 describe('Recipe model', () => {
-  before(() => conn.authenticate()
+  before(() =>
+   conn.authenticate()
     .catch((err) => {
       console.error('Unable to connect to the database:', err);
     }));
@@ -16,7 +17,19 @@ describe('Recipe model', () => {
       });
       it('should work when its a valid name', () => {
         Recipe.create({ name: 'Milanesa a la napolitana' });
+        it("should work when its a valid summary", () => {
+          Recipe.create({ summary: "Resumen milanesa a la napolitana" });
+        });
+        /*it("should work when its a valid Puntuation", () => {
+          Recipe.create({ Puntuation: 10 });
+        });*/
+        it("should work when its a valid healthScore", () => {
+          Recipe.create({ healthScore: 10 });
+        });
+        it("should work when its a valid steps", () => {
+          Recipe.create({ steps: "Pasos a seguir para la creacion" });
       });
     });
+    });
   });
-});
+})

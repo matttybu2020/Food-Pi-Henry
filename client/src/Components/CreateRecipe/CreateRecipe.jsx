@@ -9,8 +9,8 @@ import './CreateRecipe.css'
 
 
 
+export default function CreateRecipe(){
 
-    export default function CreateRecipe(){
     const dispatch = useDispatch()// map distpatch to props
     const history = useHistory()
     const dietsTypes = useSelector((state)=> state.diets) //map to props
@@ -60,7 +60,7 @@ function handleSelect(e){
     })
     console.log(input)
 }else{
-    alert("La dieta ya existe")
+    alert("La dieta ya esta agregada")
 }
 }
 
@@ -95,9 +95,11 @@ if(input.name && input.summary&&input.image&&input.healthScore&&input.steps&&inp
 }
 
 
+
 function validate(input){
     
     let errors = {}
+
 
     //! Validacion Nombres de recetas
 
@@ -113,13 +115,17 @@ function validate(input){
         errors.name="Este campo no puede contener más de 30 caracteres"
       }
 
+
  //! Validacion Summary
 
     if(!input.summary){
      errors.summary = "Porfavor agrege algún comentario sobre su receta"
     }else if((!/^([a-zA-Z]+)(\s[a-zA-Z]+)*$/.test(input.summary))){
         errors.summary = "El campo summary solo acepta letras"
-    }
+    } else if (!/^.{0,300}$/.test(input.summary)){
+        errors.summary="Este campo no puede contener más de 300 caracteres"
+      }
+
 
  //! Validacion image
 
@@ -147,31 +153,42 @@ function validate(input){
 
  //! Validacion steps
 
+
+
+
     if (!input.steps){
-        errors.steps = "Porfavor detalle los pasos de su receta"
+        errors.steps = "Por favor detalle los pasos de su receta"
     }else if((!/^[A-Za-z0-9\s]+$/g.test(input.steps.trim()))){
        errors.steps = "El campo paso a paso solo acepta letras y numeros "
-    }
+    
+    }else if (!/^.{0,100}$/.test(input.steps)){
+        errors.steps ="Este campo no puede contener más de 100 caracteres"
+      }
+      
+      /*else if ( !/^[0-9]{3,})+?$/g.test(input.steps)){
+        errors.steps="valor numerico repetido no valido"
+      }*/
+      
+      /*else if ( !/^\d{0,2}(\,\d{1,2})?$/g.test(input.steps)){
+        errors.steps="valor numerico repetido no valido"
+      }*/
+      
+      
+    
+      
+
     //! Validacion dishTypes
 
     if(!input.dishTypes){
         errors.dishTypes = "Es necesario algún tipo de plato"
     }else if(!/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/.test(input.dishTypes.trim())){
         errors.dishTypes = "Solo se aceptan letras"
-    }
+    }else if (!/^.{0,25}$/.test(input.dishTypes)){
+        errors.dishTypes="Este campo no puede contener más de 30 caracteres"
+      }
         return errors
 }
    
-
-
-
-
-
-
-
-
-
-
 
 
 return (
@@ -241,9 +258,12 @@ return (
         /> 
         {errors.dishTypes && <p className="danger">{errors.dishTypes}</p>}      
         </div>
+
+
         <div className="select-form">
        <select  onChange ={(e)=>handleSelect(e)} className="select">
-        <option selected >Selecciona tus tipos de dieta</option>
+        <option  disabled selected defaultValue>Selecciona las dietas</option>
+        
         {dietsTypes.map(el=>(
             <option value ={el}>{el}</option>
         ))}

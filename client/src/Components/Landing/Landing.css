@@ -31,7 +31,7 @@ body{
 
 
 
-.button{
+.button1{
 
   background-image: url('http://firenzestone.com/assets/uploads/thumb_view_ceae5dd48cc40e585afff3b7685938c4.png');
     color: black;
@@ -46,7 +46,7 @@ body{
 
 
 
-.button{
+.button1{
     animation: myAnim 6s ease 0s 3 normal forwards;;
     cursor: pointer;
   

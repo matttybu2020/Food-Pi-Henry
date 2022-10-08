@@ -1,9 +1,11 @@
 
 import React from "react";
+
 import { Link,} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRecipesById,cleanFilter, } from "../../Redux/Actions/index";
+import { getRecipesById,cleanFilter,add_Favorites } from "../../Redux/Actions/index";
 import { useEffect } from "react";
+//import Swal from "sweetalert2";
 import "./DetailsRecipe.css"
 
 
@@ -21,10 +23,30 @@ useEffect(() => {
  })
 },[dispatch,props.match.params.id]);
 
-
-
 const myRecipe = useSelector((state)=> state.detail);
 console.log(myRecipe)
+
+
+
+//*Agregar a Favorites
+
+const state = useSelector((state) => state);
+const { favorites } = state;
+
+
+
+const Add_Favorite = () => {
+  let id_favorite = myRecipe.id;
+
+  let info_repeat = favorites.find((e) => e.id === id_favorite);
+
+  if (!info_repeat) {
+    dispatch(add_Favorites(myRecipe));
+    return alert("Agregado A Favoritos");
+  }
+   return alert("Ya se encuentra en Favoritos");
+};
+
 
 return( // renderizamos el detalle
   <div>
@@ -77,6 +99,9 @@ return( // renderizamos el detalle
    }
 <div className="button-containerone">
   <Link to = '/home'><button className="button-recipe">Volver</button></Link>
+  <button type="button" onClick={Add_Favorite} className="add_button">
+          {"AGREGAR A FAVORITOS"}
+        </button>
   </div>
   </div>
   </div>

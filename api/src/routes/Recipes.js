@@ -110,6 +110,55 @@ router.delete('/:id', (req, res, next) =>{
 });
 
 
+//! Ruta put
+
+router.put("recipes/:id", async (req, res) => {
+  const { id } = req.params;
+  const {
+    name,
+     summary,
+     healthScore,
+     steps,
+     //diets,
+     dishTypes,
+    image,
+  } = req.body;
+
+  try {
+    await Recipe.update(
+      {
+        name: name,
+        summary: summary,
+        healthScore: healthScore,
+        steps: steps,
+        dishTypes: dishTypes,
+        life_span: life_span,
+        image: image,
+
+      },
+      {
+        where: {
+          id: id,
+        },
+      }
+    );
+    return res.status(200).send("Modificacion realizada en Recetas");
+  } catch (error) {
+    res.status(404).send("No se Actualizo");
+  }
+});
+
+
+
+//** Error 404*/
+/*
+router.all("*", (_req, res) => {
+  res.status(404).send("no se encontro la pagina");
+});*/
+
+
+
+
 
 module.exports = router
 

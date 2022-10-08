@@ -20,3 +20,9 @@ export const ORDER_NAME = "ORDER_NAME"
 export const ORDER_SCORE = "ORDER_SCORE"
 
 export const FILTER_ORIGEN = "FILTER_ORIGEN"
+
+
+
+export const ADD_FAVORITES ="ADD_FAVORITES"
+
+export const REMOVE_FAVORITES ="REMOVE_FAVORITES"

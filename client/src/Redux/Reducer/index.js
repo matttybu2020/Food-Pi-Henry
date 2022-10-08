@@ -1,5 +1,5 @@
 
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID ,FILTER_BY_TYPES_DIETS,ORDER_NAME,ORDER_SCORE,FILTER_ORIGEN} from "../Actions/Contantes"
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID ,FILTER_BY_TYPES_DIETS,ORDER_NAME,ORDER_SCORE,FILTER_ORIGEN,ADD_FAVORITES,REMOVE_FAVORITES} from "../Actions/Contantes"
 
 
 const initialState = {
@@ -7,6 +7,7 @@ const initialState = {
     allRecipes: [],
     diets: [],
     detail:[],
+    favorites: [],
     pages:1
 
 }
@@ -74,7 +75,6 @@ function rootReducer(state = initialState, action) {
               case FILTER_BY_TYPES_DIETS:
 
                 const recipes = state.allRecipes
-          
                 const recipesFiltered = action.payload === 'tipos' ? recipes : recipes.filter(el => el.diets.includes(action.payload))
           
           
@@ -139,6 +139,19 @@ function rootReducer(state = initialState, action) {
         ...state,
         recipes: filterByOrigen
       }
+
+      case ADD_FAVORITES:
+      return {
+        ...state,
+        favorites: state.favorites.concat(action.payload),
+      };
+
+    case REMOVE_FAVORITES:
+      return {
+        ...state,
+        favorites: state.favorites.filter(el => el.id !== action.payload
+        ),
+      };
 
 
 

@@ -1,11 +1,13 @@
 .con-about{
     margin-top: 100x;
-    
-    display: flex;
+     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url('https://img.freepik.com/fotos-premium/textura-fondo-marmol-blanco_42682-249.jpg?w=2000');
+
+
+
 }
 
 .con-about h1 {
