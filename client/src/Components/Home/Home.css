@@ -1,12 +1,23 @@
 
+.homecontainer{
+    background: url('../../Img/Home.png')no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-size:cover;
+
+
+}
+
 
 .contenedor{
-    background: url('../../Img/Home.png')no-repeat fixed;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    background-size: cover;
+    background-size:cover;
 }
 
 
@@ -16,26 +27,30 @@
 .contenedor-cards{
     
     display: grid;
-    gap: 0.2rem;
-    grid-template-columns: auto auto auto auto ;
+    gap: 3rem;
+    grid-template-columns: auto auto auto   ;
     text-align: center;
+    width: 60%;
+    padding-bottom: 4rem;
+
+    
    
 }
 .contenedor-cards a {
 text-decoration: none;
 }
+.contenedor-cards:hover{
+    border-color: green 2px;
 
+    
+}
 
 
 
 .searchbar-container{
     width: 100%;
     height: auto;
-    margin: 1rem 0 1rem 0;
-    justify-content: center;
-    display: flex;
-  
-   }
+  }
   
 
    .contenedor-filtros{
@@ -49,6 +64,7 @@ text-decoration: none;
  .contenedor-filtros select{
     margin-right: 0.5rem;
  }
+
  .filtros{
     border: hidden;
     padding: 0.3rem;
@@ -58,6 +74,42 @@ text-decoration: none;
 box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
  }
 
+.buscadornuevo{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+}
+
+.buttonrecipe2{
+    appearance: none;
+    background-color: #5a5e5b;
+    
+    border-radius: 6px;
+    box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+   
+   
+    
+}
+
+.recargarpagina{
+    padding: 1rem 0;
+}
 
 
  

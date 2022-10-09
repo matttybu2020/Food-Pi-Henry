@@ -1,54 +1,56 @@
 
 .contendedorfavorites{
   background-image: url('https://img.freepik.com/fotos-premium/textura-fondo-marmol-blanco_42682-249.jpg?w=2000');
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-size:cover;
+
 }
-
-
+.titulo{
+  color: #000000;
+}
 .recipeCard {
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 61%) 0px 1px 4px -2px;
-  margin: 2%;
+  background-color: rgb(224, 219, 213);
+  box-shadow: rgb(0 0 0 / 61%) 0px 1px 4px ;
+  margin: 1%;
   border-radius: 5px;
+  width:50%;
+  height:50%;
+  display: flex;
+    justify-content:center;
+    align-items: center;
+   
 }
 .recipeCard:hover {
   box-shadow: 1px -1px 13px 4px rgba(0, 0, 0, 0.93);
 }
-.img_diets {
-  padding: 1%;
-}
 
-.text_diets {
-  text-transform: capitalize;
-  font: 0.9rem futura-book;
-  margin-bottom: 1%;
-}
 
-.titulo {
-  font: 0.9rem futura-book;
-}
+
+
 .favorites {
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.8));
   text-transform: uppercase;
   margin-right: 15%;
   margin-left: 15%;
- 
 }
 
-button2 {
+.button-recipe3 {
   margin: 4px;
   border-radius: 10px;
   height: 35px;
   border: none;
   background-color: transparent;
-  color: #363332;
+  color: #3e3c3c;
   font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-button2:hover {
-  color: white;
-  background-color: #9a9392;
+.button-recipe3:hover {
+  color: rgb(8, 8, 8);
+  background-color: #aca8a8;
   transition: 0.4s ease all;
 }
 

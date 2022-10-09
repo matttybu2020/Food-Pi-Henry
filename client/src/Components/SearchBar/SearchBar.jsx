@@ -19,7 +19,7 @@ function handleInputChange(e){
    }
  function handleSubmit(e){
     e.preventDefault()
-    if(name.length===0){
+    if(name.length===0 || name.trim().length === 0){
         alert("Por favor escriba un receta para iniciar la búsqueda")
     }else{
     dispatch(getName(name))
@@ -30,13 +30,14 @@ function handleInputChange(e){
 
 
 return (
-    <div className="searchbar">
+    <div  className="containerbuscador">
 
         <input className="buscador"
         type = "text"
         placeholder="Busca tu receta.."
         onChange={handleInputChange}
         value={name}
+
         />
         <button type = 'submit'onClick={handleSubmit} className="button-recipe">Buscar</button>
         

@@ -30,9 +30,6 @@ describe("Recipe routes", () => {
   describe("GET /diets", () => {
     it("should get 200", () => agent.get("/diets").expect(200));
   });
-  describe("delete /recipe/:id", () => {
-    it("should get 200", () => agent.get("/recipe/:id").expect(200));
-  });
 
   describe("GET /diets array ", () => {
     it("should get 200 and different to objet", () =>

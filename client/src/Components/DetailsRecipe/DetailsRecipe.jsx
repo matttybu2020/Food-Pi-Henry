@@ -99,8 +99,8 @@ return( // renderizamos el detalle
    }
 <div className="button-containerone">
   <Link to = '/home'><button className="button-recipe">Volver</button></Link>
-  <button type="button" onClick={Add_Favorite} className="add_button">
-          {"AGREGAR A FAVORITOS"}
+  <button className="button-recipe" type="button" onClick={Add_Favorite}>
+          {"Agregar a Favorites"}
         </button>
   </div>
   </div>

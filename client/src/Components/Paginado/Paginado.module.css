@@ -3,6 +3,30 @@
     
      }
     
-     .selecionado:focus{
-      background-color: black;
+     
+     .buttonrecipe3:focus{
+        background-color: rgb(252, 246, 246) !important;
+        color: black;
+     }
+
+     .buttonrecipe3{
+
+     
+        background-color: #5a5e5b;
+         border-radius: 6px;
+        box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 6px 16px;
+        position: relative;
+        text-align: center;
+        
+       
+
      }

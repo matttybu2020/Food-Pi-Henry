@@ -229,7 +229,7 @@ return (
         {errors.image && <p className="danger">{errors.image}</p>}
          </div>
          <div className="elements-form">
-        <label className="label">Nivel:</label>
+        <label className="label">Nivel saludable:</label>
         <input className="input"
         type = "number"
         name = "healthScore"

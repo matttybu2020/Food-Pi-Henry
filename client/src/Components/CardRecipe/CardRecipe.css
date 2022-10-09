@@ -2,34 +2,53 @@
 .cards-recetas{
     cursor:pointer;
     display: block;
-    border-radius: 1px;
+    border-radius: 5%;
     width: 90%;
-    height: 90%;
-    margin-left: 2rem;
+    height: 100%;
     padding:0.8rem ;
     color: rgb(8, 7, 7);
-    -webkit-box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
-    box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
     overflow: hidden;
     cursor: default;
     transition: all 400ms ease;
     text-decoration: none;
+    border: 1px solid black;
+    background-color: rgb(224, 219, 213);
+}
+
+
+.cards-recetas:hover{
+    -webkit-box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 6px 3px rgba(0,0,0,0.75);
+    cursor: pointer;
+    
 
 }
 
 .name-recipe{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #000000;
     text-decoration: none;
     text-align: center;
 }
-.image{
-    width:100%;
-   height:auto;
+.image_container{
+    
+   width: 100%;
+    height: 70%;
+    padding-top: 1rem;
+    object-fit: fill;
+    border-radius: 20px;
+  
+}
+.image:hover{
+
 
 }
+
+
+
+
 
 .name-recipe a{
     text-decoration: none;
