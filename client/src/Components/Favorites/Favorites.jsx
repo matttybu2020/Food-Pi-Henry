@@ -13,6 +13,7 @@ function Favorites() {
 
   const removefavorite = (e) => {
     dispatch(remove_Favorites(e.target.id));
+    return alert("Eliminado de favoritos ")
   };
 
 
@@ -39,7 +40,8 @@ function Favorites() {
                   <img
                     src={e.image}
                     alt="error cargando"
-                                      />{" "}
+                    width="312px"
+                    height="231px"              />{" "}
                 </div>
                 
 

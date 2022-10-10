@@ -59,7 +59,8 @@ return( // renderizamos el detalle
     <h2 className="title">{myRecipe[0].name}</h2>
     </div>
     <div className="container-imagen">
-    <img src ={myRecipe[0].image } alt = "img" className="imagen-detalle"/> 
+    <img src ={myRecipe[0].image } alt = "img" className="imagen-detalle" width="312px"
+                    height="231px" /> 
     </div>
     <div className="container-dishtypes">
     <p><p className="negrita">Dishtypes:</p>{myRecipe[0].dishTypes}</p>

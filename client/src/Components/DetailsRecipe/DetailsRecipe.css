@@ -1,11 +1,11 @@
 .containerdetail{
-   /*background: url('../../Img/Create.jpeg') no-repeat ;*/
+    background: url('../../Img/madera.jpeg')no-repeat;
     width: 100%;
     height: auto;
     min-height: 100vh;
     background-size:cover;
-
-   
+   padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .container{

@@ -1,19 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import Main from "../Main/Main.jsx"
 import "./Landing.css";
-export default function Landing(){
+export default function Landing() {
+  return (
+    <div className="landing_container1">
+      <div className="background1">
+       
+      <Main />
+          
+         
 
-
-    return (
-        <div className="landing_container">
-        <div className="background">
-        <Link to ='/home'>              
-        <button className="buttonlanding">Ingresar</button>
-            </Link>
-            </div>
+          {/*<Link to="/home">
+            <button className="buttonlanding">Ingresar</button>
+  </Link>*/}
+       
+      </div>
     </div>
-       
-    );
-       
-    
+  );
 }

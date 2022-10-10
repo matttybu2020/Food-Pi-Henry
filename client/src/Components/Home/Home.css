@@ -11,8 +11,7 @@
 
 
 .contenedor{
-    width: 100%;
-    height: auto;
+   
     display: flex;
     justify-content:center;
     align-items: center;
@@ -28,7 +27,7 @@
     
     display: grid;
     gap: 3rem;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 341.59px 341.59px 341.59px;
     text-align: center;
     width: 60%;
     padding-bottom: 4rem;

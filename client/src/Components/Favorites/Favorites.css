@@ -5,7 +5,8 @@
   height: auto;
   min-height: 100vh;
   background-size:cover;
-
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 .titulo{
   color: #000000;
@@ -20,7 +21,7 @@
   display: flex;
   justify-content:center;
   align-items: center;
-   
+   padding-top: 1rem;
 }
 .recipeCard:hover {
   box-shadow: 1px -1px 13px 4px rgba(0, 0, 0, 0.93);
