@@ -15,13 +15,14 @@ export default function DetailsRecipe(props) {
  
 const dispatch = useDispatch();
 
-
 useEffect(() => {
   dispatch(getRecipesById(props.match.params.id));
  return(()=>{
   dispatch(cleanFilter())
  })
 },[dispatch,props.match.params.id]);
+
+
 
 const myRecipe = useSelector((state)=> state.detail);
 console.log(myRecipe)
@@ -49,7 +50,7 @@ const Add_Favorite = () => {
 
 
 return( // renderizamos el detalle
-  <div>
+  <div className="containerdetail">
     <div className="container">
       {
          myRecipe.length>0?
@@ -100,7 +101,7 @@ return( // renderizamos el detalle
 <div className="button-containerone">
   <Link to = '/home'><button className="button-recipe">Volver</button></Link>
   <button className="button-recipe" type="button" onClick={Add_Favorite}>
-          {"Agregar a Favorites"}
+          {"Agregar a Favoritos"}
         </button>
   </div>
   </div>

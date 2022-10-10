@@ -187,14 +187,16 @@ function handleFilterByOrigen(e){
             <CardRecipe key ={el.id}
              image ={el.image} 
              name ={el.name}
+             healthScoree ={el.healthScore}
              diets ={el.diets}
+             
              />
             </Link>
         )     
     })
   } 
   
-  {recipes.length === 0 && <p>No hay ninguna receta</p>}
+  {recipes.length === 0 && <h1><p>No hay ninguna receta por el momento</p></h1>}
 </div>
     </div>
     </div>

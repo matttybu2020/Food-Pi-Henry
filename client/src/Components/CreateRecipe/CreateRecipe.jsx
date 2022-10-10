@@ -114,12 +114,15 @@ function validate(input){
       else if (!/^.{0,25}$/.test(input.name)){
         errors.name="Este campo no puede contener más de 30 caracteres"
       }
+      /*else if ((/^[a-zA-Z\u00C0-\u017F]+$/.test(input.name))){
+        errors.name="acento"
+      }*/
 
 
  //! Validacion Summary
 
     if(!input.summary){
-     errors.summary = "Porfavor agrege algún comentario sobre su receta"
+     errors.summary = "Por favor agrege algún comentario sobre su receta"
     }else if((!/^([a-zA-Z]+)(\s[a-zA-Z]+)*$/.test(input.summary))){
         errors.summary = "El campo summary solo acepta letras"
     } else if (!/^.{0,300}$/.test(input.summary)){
@@ -134,7 +137,7 @@ function validate(input){
     }else if((!/.+\.(jpg|png)$/.test(input.image))){
         errors.image = "La imagen debe ser de tipo jpg o png"
     }*/
-    if (!input.image)errors.image= "Viene por default o ingrese img";
+    if (!input.image)errors.image= " ingrese img";
   else if (!/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+(?:png|jpg|jpeg|gif|svg)+$/.test(
     input.image))
      {
@@ -154,15 +157,13 @@ function validate(input){
  //! Validacion steps
 
 
-
-
     if (!input.steps){
         errors.steps = "Por favor detalle los pasos de su receta"
     }else if((!/^[A-Za-z0-9\s]+$/g.test(input.steps.trim()))){
        errors.steps = "El campo paso a paso solo acepta letras y numeros "
     
-    }else if (!/^.{0,100}$/.test(input.steps)){
-        errors.steps ="Este campo no puede contener más de 100 caracteres"
+    }else if (!/^.{0,1000}$/.test(input.steps)){
+        errors.steps ="Este campo no puede contener más de 1000 caracteres"
       }
       
       /*else if ( !/^[0-9]{3,})+?$/g.test(input.steps)){

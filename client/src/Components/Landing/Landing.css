@@ -5,14 +5,17 @@
   object-fit: center;
   margin: 0;
   padding: 0;
-  background-image: url('https://img.freepik.com/fotos-premium/colorida-comida-saludable-no-saludable-sobre-fondo-blanco-textura_23-2147885658.jpg?w=2000');
+  background: url('https://img.freepik.com/fotos-premium/chef-profesional-prepara-verduras-sarten-cocinar-comida-comida-vegetariana-saludable_192985-2249.jpg?w=740')no-repeat;
   padding-top: 1rem;
   display:flex;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  
+  
+  {/*background-image: url('https://img.freepik.com/fotos-premium/colorida-comida-saludable-no-saludable-sobre-fondo-blanco-textura_23-2147885658.jpg?w=2000');*/}
+ 
 }
 
 
@@ -33,19 +36,35 @@ body{
 
 .buttonlanding{
 
-  background-image: url('http://firenzestone.com/assets/uploads/thumb_view_ceae5dd48cc40e585afff3b7685938c4.png');
-    color: black;
-    font-weight: bold;
-    font-size: 3rem;
-    border-radius: 1rem;
-    padding: 2rem 1rem;
-    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 1px 2px 15px 17px rgba(0,0,0,0.38); 
-    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 1px 2px 15px 17px rgba(0,0,0,0.38);
-
+  border-top: 1px solid #030303;
+  background:url('https://i.pinimg.com/originals/c0/fd/34/c0fd345c0ef41c823d9cb04d0f511979.jpg');
+  background: -webkit-gradient(linear, left top, left bottom, from(#3b2004), to(#7d6428));
+  background: -webkit-linear-gradient(top, #3b2004, #7d6428);
+  background: -moz-linear-gradient(top, #3b2004, #7d6428);
+  background: -ms-linear-gradient(top, #3b2004, #7d6428);
+  background: -o-linear-gradient(top, #3b2004, #7d6428);
+  padding: 13px 26px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #fffcff;
+  font-size: 17px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
 }
-
-
-
+.buttonlanding:hover {
+  
+  color: #ccc;
+  }
+.buttonlanding:active {
+  border-top-color: #1c1205;
+  background: #1c1205;
+  }
 .buttonlanding{
     animation: myAnim 6s ease 0s 3 normal forwards;;
     cursor: pointer;

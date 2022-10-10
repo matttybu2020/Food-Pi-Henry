@@ -17,12 +17,7 @@ function Favorites() {
 
 
 
-  /*function handleDelete(el){
-    setInput({
-        ...input,
-        diets: input.diets.filter(d=> d !== el) 
-    })
-}*/
+
 
 
   function volver() {
@@ -71,7 +66,9 @@ function Favorites() {
           ))}
         </div>
       ) : (
-        <h1>No tenemos Dietas agregadas a Favorito </h1>
+        <div className="favorite">
+        <h1>No hay dietas agregadas en favoritos </h1>
+        </div>
       )}
       <button className="button-recipe" type="button" onClick={volver} >
         Volver

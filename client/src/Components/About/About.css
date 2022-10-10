@@ -1,20 +1,36 @@
 .con-about{
     margin-top: 100x;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('https://img.freepik.com/fotos-premium/textura-fondo-marmol-blanco_42682-249.jpg?w=2000');
+    background: url('../../Img/madera.jpeg')no-repeat;
 
-
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-size:cover;
 
 }
 
 .con-about h1 {
     font-size:x-large;
-    color: rgb(16, 17, 17);
-    
+    color: rgb(245, 251, 251);
+ 
 }
+
+.con-about h2 {
+    font-size:x-large;
+    color: rgb(245, 251, 251);
+ 
+}
+
+.con-about h3 {
+    font-size:x-large;
+    color: rgb(245, 251, 251);
+ 
+}
+
 
 .homeLink{
     font-size: 40px;

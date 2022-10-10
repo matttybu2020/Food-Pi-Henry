@@ -1,6 +1,6 @@
 
 .contendedorfavorites{
-  background-image: url('https://img.freepik.com/fotos-premium/textura-fondo-marmol-blanco_42682-249.jpg?w=2000');
+  background: url('../../Img/madera.jpeg')no-repeat 2% 40% fixed;
   width: 100%;
   height: auto;
   min-height: 100vh;
@@ -18,16 +18,13 @@
   width:50%;
   height:50%;
   display: flex;
-    justify-content:center;
-    align-items: center;
+  justify-content:center;
+  align-items: center;
    
 }
 .recipeCard:hover {
   box-shadow: 1px -1px 13px 4px rgba(0, 0, 0, 0.93);
 }
-
-
-
 
 .favorites {
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.8));
@@ -81,3 +78,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.favorite h1 {
+  font-size:x-large;
+  color: rgb(245, 251, 251);}

@@ -1,5 +1,5 @@
 .container3{
-    background: url('../../Img/Create.jpeg') no-repeat 2% 40% fixed;
+  background: url('../../Img/madera.jpeg')no-repeat 2% 40% fixed;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -22,6 +22,8 @@
     -moz-box-shadow: 10px 10px 16px 0px rgba(110, 115, 111);
     box-shadow: 10px 10px 16px 0px rgba(110, 115, 111);
     padding-bottom: 1rem;
+
+    justify-content: center;
     
 }
 
@@ -29,6 +31,7 @@
     width: 100%;
     height: auto;
     margin-top: 1rem;
+
 }
 
 .title{
@@ -36,6 +39,7 @@
     text-align: center;
     padding-bottom: 1rem;
     padding-top: 1rem
+    
 }
 
 .elements-form{
@@ -59,18 +63,18 @@ font-weight: bold;
     width: 60%;
     border: hidden;
     margin-left: 1rem;
-    -webkit-box-shadow: 10px 10px 16px 0px rgb(225, 248, 231);
-    -moz-box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
-    box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
+    -webkit-box-shadow: 10px 10px 16px 0px rgb(118, 120, 120);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(118, 120, 120);
+    box-shadow: 10px 10px 16px 0px rgba(118, 120, 120);
     border-bottom: 1px solid black;
 }
 
 .button-recipe{
     appearance: none;
-    background-color: #5a5e5b;
+    background-color: #1b1d1d;
     
     border-radius: 6px;
-    box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
+    box-shadow: rgba(234, 242, 246, 0.1) 0 1px 0;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
@@ -98,6 +102,7 @@ font-weight: bold;
   
   .button-recipe:hover {
     background-color: #9b9f9c;
+    color: black;
   }
   
   .button-recipe:focus {
@@ -108,7 +113,7 @@ font-weight: bold;
   .button-recipe:disabled {
     background-color: #868b87;
     border-color: rgba(27, 31, 35, .1);
-    color: rgba(255, 255, 255, .8);
+    color: black;
     cursor: default;
   }
   
@@ -131,10 +136,9 @@ font-weight: bold;
     text-align: center;
     border:hidden;
     border-bottom: 1px black solid;
-    -webkit-box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
-    -moz-box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
-    box-shadow: 10px 10px 16px 0px rgba(225, 248, 231);
-
+    -webkit-box-shadow: 10px 10px 16px 0px rgb(118, 120, 120);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(118, 120, 120);
+    box-shadow: 10px 10px 16px 0px rgba(118, 120, 120);
   }
 
 
@@ -152,6 +156,9 @@ font-weight: bold;
     width: 100%;
     height: auto;
     display: flex;
+    
+   
+  
   }
 
   .lista{
@@ -163,8 +170,11 @@ font-weight: bold;
   }
 
   .danger {
-    color: rgb(12, 12, 12);
+    color: rgb(247, 21, 21);
     font-size: 9px;
     padding: 0 2rem;
     width: 35%;
   }
+
+
+  

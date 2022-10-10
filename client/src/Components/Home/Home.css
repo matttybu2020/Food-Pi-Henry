@@ -1,6 +1,6 @@
 
 .homecontainer{
-    background: url('../../Img/Home.png')no-repeat;
+    background: url('../../Img/madera.jpeg')no-repeat;
     width: 100%;
     height: auto;
     min-height: 100vh;
@@ -28,7 +28,7 @@
     
     display: grid;
     gap: 3rem;
-    grid-template-columns: auto auto auto   ;
+    grid-template-columns: auto auto auto;
     text-align: center;
     width: 60%;
     padding-bottom: 4rem;
@@ -69,9 +69,9 @@ text-decoration: none;
     border: hidden;
     padding: 0.3rem;
     border-bottom: 1px solid black;
-     -webkit-box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
--moz-box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
-box-shadow: 10px 10px 16px 0px rgba(167, 174, 169);
+     -webkit-box-shadow: 10px 10px 16px 0px rgb(61, 36, 19);
+-moz-box-shadow: 10px 10px 16px 0px rgba(61, 36, 19);
+box-shadow: 10px 10px 16px 0px rgba(61, 36, 19);
  }
 
 .buscadornuevo{
@@ -83,7 +83,7 @@ justify-content: center;
 
 .buttonrecipe2{
     appearance: none;
-    background-color: #5a5e5b;
+    background-color: #1b1d1d;
     
     border-radius: 6px;
     box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
@@ -102,10 +102,20 @@ justify-content: center;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-   
-   
     
 }
+.buttonrecipe2:hover {
+        background-color: #9b9f9c;
+        color: black;
+      }
+      
+
+
+
+
+
+
+
 
 .recargarpagina{
     padding: 1rem 0;

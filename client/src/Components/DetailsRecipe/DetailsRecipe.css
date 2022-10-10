@@ -1,18 +1,25 @@
+.containerdetail{
+   /*background: url('../../Img/Create.jpeg') no-repeat ;*/
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-size:cover;
 
+   
+}
 
 .container{
-    background-image: url('http://firenzestone.com/assets/uploads/thumb_view_121441518cf2d163b54c6762b2c31727.png');
-    width: 80%;
+    background: url('http://firenzestone.com/assets/uploads/thumb_view_121441518cf2d163b54c6762b2c31727.png')no-repeat 2% 40% fixed;
+    width: 50%;
     height: auto;
     margin: 5% auto 5% auto;
-    background-color: #dae1da;
+  
     border-radius: 5px;
--webkit-box-shadow: 10px 10px 16px 0px rgb(47, 49, 48);
+   -webkit-box-shadow: 10px 10px 16px 0px rgb(47, 49, 48);
     -moz-box-shadow: 10px 10px 16px 0px rgb(80, 84, 81);
     box-shadow: 10px 10px 16px 0px rgb(55, 57, 56);
     padding: 2rem;
-
-    
+    background-size: cover;
 }
 .title{
     justify-content: center;

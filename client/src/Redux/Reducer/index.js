@@ -149,7 +149,7 @@ function rootReducer(state = initialState, action) {
     case REMOVE_FAVORITES:
       return {
         ...state,
-        favorites: state.favorites.filter(el => el.id !== action.payload
+        favorites: state.favorites.filter( (recipe) => recipe.id !== action.payload
         ),
       };
 
