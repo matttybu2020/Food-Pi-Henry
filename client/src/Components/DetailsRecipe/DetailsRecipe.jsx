@@ -3,9 +3,10 @@ import React from "react";
 
 import { Link,} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRecipesById,cleanFilter,add_Favorites } from "../../Redux/Actions/index";
+import { getRecipesById,cleanFilter,add_Favorites} from "../../Redux/Actions/index";
 import { useEffect } from "react";
-//import Swal from "sweetalert2";
+
+
 import "./DetailsRecipe.css"
 
 
@@ -26,7 +27,6 @@ useEffect(() => {
 
 const myRecipe = useSelector((state)=> state.detail);
 console.log(myRecipe)
-
 
 
 //*Agregar a Favorites
@@ -100,10 +100,10 @@ return( // renderizamos el detalle
               
    }
 <div className="button-containerone">
-  <Link to = '/home'><button className="button-recipe">Volver</button></Link>
+  <Link  to = '/home'><button className="button-recipe">Volver</button></Link>
   <button className="button-recipe" type="button" onClick={Add_Favorite}>
           {"Agregar a Favoritos"}
-        </button>
+  </button>
   </div>
   </div>
   </div>

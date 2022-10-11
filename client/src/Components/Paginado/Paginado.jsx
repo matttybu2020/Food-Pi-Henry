@@ -26,7 +26,7 @@ export default function Paginado({recipesPerPage,recipes,paginado,currentPage,be
         {pageNumbers &&
           pageNumbers.map((number) => (
             <button
-              className={style.buttonrecipe3}
+              className={currentPage === number ? style.botonSeleccionado : style.boton }
               onClick={() => paginado(number)}
             >
               {number}

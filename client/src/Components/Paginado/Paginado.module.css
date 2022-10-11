@@ -3,36 +3,40 @@
     
      }
     
-     
-     .buttonrecipe3:focus{
-        background-color: rgb(252, 246, 246) !important;
-        color: black;
-     }
-
-     .buttonrecipe3{
-        background-color: #1b1d1d;
-        border-radius: 6px;
-        box-shadow: rgba(219, 225, 231, 0.1) 0 1px 0;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 20px;
-        padding: 6px 16px;
-        position: relative;
-        text-align: center;
-        
-     }
-     
      .boton{
         background-color: #1b1d1d;
-        color: #fff;
+        float: left;
+        padding: 5px 12px;
+        text-decoration: none;
+        color: rgb(252, 245, 245);
+        border-radius: 20px;
+        font-size: 22px;
+        border: 1px solid black;
+        margin: 0 4px;
         cursor: pointer;
-     }
-     .boton:focus{
-        background-color: rgb(252, 246, 246) !important;
+    }
+    
+    .boton:hover{
+        background-color: rgb(83, 83, 82)
+    }
+    
+    .botonSeleccionado{
         color: black;
-     }
+        float: left;
+        padding: 5px 12px;
+        text-decoration: none;
+        background-color: rgb(236, 229, 229);
+        color: black;
+        box-shadow: 6px 5px 9px 4px #1a1a1b;
+        border-radius: 25px;
+        font-size: 22px;
+        border: 1px solid black;
+        margin: 0 4px;
+        cursor: pointer;
+    }
+    
+    .botonSeleccionado:hover{
+        background-color: rgb(83, 83, 82)
+    }
+     
+    

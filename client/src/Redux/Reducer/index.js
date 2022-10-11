@@ -29,6 +29,7 @@ function rootReducer(state = initialState, action) {
               ...state,
               recipes: action.payload,
               detail: action.payload
+              
             }
 
           case GET_RECIPES_BY_ID:
@@ -152,17 +153,6 @@ function rootReducer(state = initialState, action) {
         favorites: state.favorites.filter( (recipe) => recipe.id !== action.payload
         ),
       };
-
-
-
-
-
-
-
-
-
-
-
 
 
               

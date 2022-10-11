@@ -11,8 +11,8 @@ export default function CardRecipe({ name, image, diets,healthScore }) {
       height="100%"/>
       </div>
       
-        <h1>{healthScore}</h1>
-        <h2 className="diets-recipe">{diets.join(",  ")}</h2>
+        <h1>⭐{healthScore}</h1>
+        <h2 className="diets-recipe">🥦{diets.join(",  ")}</h2>
     </div>
   );
 }

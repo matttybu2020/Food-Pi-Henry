@@ -62,17 +62,18 @@ const beforePage = () => {
 
 
  //* Recargo la pagina
+
  function handleRefresh(e){
     e.preventDefault()
-    dispatch(cleanFilter())
+    //dispatch(cleanFilter())
     dispatch(getAllRecipes())
   }
 
 
 //*Filtrado 
 
-
 function handleFilterByDiets(e){
+  e.preventDefault()
   dispatch(filterByTypesDiets(e.target.value))
   setCurrentPage(1)
   setOrder("Ordenado por" + e.target.value)
@@ -87,6 +88,7 @@ setOrder("Ordenado por" + e.target.value)
   
 }
 function handleSortByScore(e){
+  e.preventDefault()
   dispatch(orderScore(e.target.value))
   setCurrentPage(1)
   setOrder("Ordenado por" + e.target.value)
@@ -94,6 +96,7 @@ function handleSortByScore(e){
 }
 
 function handleFilterByOrigen(e){
+  e.preventDefault()
   dispatch(filterOrigen(e.target.value))
   setCurrentPage(1)
   setOrder("Ordenado"+e.target.value)
@@ -187,7 +190,7 @@ function handleFilterByOrigen(e){
             <CardRecipe key ={el.id}
              image ={el.image} 
              name ={el.name}
-             healthScoree ={el.healthScore}
+             healthScore ={el.healthScore}
              diets ={el.diets}
              
              />

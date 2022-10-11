@@ -74,8 +74,8 @@ function handleDelete(el){
 
 function handleSubmit(e){
     e.preventDefault()
-if(input.name && input.summary&&input.image&&input.healthScore&&input.steps&&input.dishTypes 
-&&!errors.name&& !errors.summary&&!errors.image&&!errors.healthScore&&!errors.steps&&!errors.dishTypes&&input.diets.length !==0 &&input.diets.length<=3){
+if(input.name && input.summary&&input.image&&input.healthScore&&input.steps&&input.dishTypes&&input.diets.length !==0 && input.diets.length <= 4
+&&!errors.name&& !errors.summary&&!errors.image&&!errors.healthScore&&!errors.steps&&!errors.dishTypes ){
     dispatch(postRecipe(input))
     alert("Receta creada exitosamente")
     setInput({
@@ -159,7 +159,9 @@ function validate(input){
 
     if (!input.steps){
         errors.steps = "Por favor detalle los pasos de su receta"
-    }else if((!/^[A-Za-z0-9\s]+$/g.test(input.steps.trim()))){
+    }else if(!/^[a-zA-ZÀ-ÿ\u00f1\u00d10-9&]+(\s*[a-zA-ZÀ-ÿ0-9&\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ0-9&\u00f1\u00d1]+$/g.test(input.steps))
+    
+    /*else if((!/^[A-Za-z0-9\s]+$/g.test(input.steps.trim())))*/{
        errors.steps = "El campo paso a paso solo acepta letras y numeros "
     
     }else if (!/^.{0,1000}$/.test(input.steps)){
@@ -182,7 +184,7 @@ function validate(input){
 
     if(!input.dishTypes){
         errors.dishTypes = "Es necesario algún tipo de plato"
-    }else if(!/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/.test(input.dishTypes.trim())){
+    }else if(!/^([a-zA-Z]+)(\s[a-zA-Z]+)*$/.test(input.dishTypes)){
         errors.dishTypes = "Solo se aceptan letras"
     }else if (!/^.{0,25}$/.test(input.dishTypes)){
         errors.dishTypes="Este campo no puede contener más de 30 caracteres"
@@ -190,6 +192,13 @@ function validate(input){
         return errors
 }
    
+
+
+
+
+
+
+
 
 
 return (
@@ -269,6 +278,7 @@ return (
             <option value ={el}>{el}</option>
         ))}
        </select>
+       
        </div>
        
    
