@@ -1,8 +1,7 @@
 
      .buscador{
-        width: 70%;
-        padding-bottom: 0.5rem;
-   
+      width: 70%;
+      padding-bottom: 0.5rem;
       margin-right: 0.5rem;
       border:hidden;
       text-align: center;
@@ -14,6 +13,8 @@
 
      }
 .containerbuscador{
-    width: 50%
+    width: 50%;
+    padding: 2rem 0;
+
 }
     

@@ -55,7 +55,7 @@ function Favorites() {
                 </div>
                 
                 <div className="opciones">
-                  <Link to={`/recipes/${e.id}`} className="links">
+                  <Link  to={`/recipes/${e.id}`} className="links">
                     <button className="button-recipe3"> Ver detalles</button>
                   </Link>
                  

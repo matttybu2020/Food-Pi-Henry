@@ -26,8 +26,13 @@ module.exports = (sequelize) => {
     },
     image:{
       type:DataTypes.STRING
+
+      //defaul value 
     },
     dishTypes:{
+      type:DataTypes.STRING
+    },
+    score:{
       type:DataTypes.STRING
     },
     

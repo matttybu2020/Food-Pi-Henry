@@ -25,7 +25,8 @@ router.get('/',async (req,res)=>{
         console.log(error)
      return   res.status(404).send('No existen recetas disponibles')
     }
-}) 
+})
+
 
 
 //! Busqueda de receta por id
@@ -54,6 +55,7 @@ router.post('/',async (req,res)=>{
   const{image,
      name,
      summary,
+     score,
      healthScore,
      steps,
      diets,
@@ -61,7 +63,7 @@ router.post('/',async (req,res)=>{
      createdInDb,
     } = req.body
   try {
-  if (!name || !summary){
+  if (!name || !summary || !score || !healthScore || !steps || !dishTypes || !diets){
     return res.status(404).json({msg: "Faltan enviar datos"})
 
     /*
@@ -74,6 +76,7 @@ router.post('/',async (req,res)=>{
       const newRecipe = await Recipe.create({
           name,
           summary,
+          //score,
           healthScore,
           steps,
           dishTypes,
@@ -97,8 +100,33 @@ router.post('/',async (req,res)=>{
 })
 
 
-//! Ruta Delete 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//! Ruta Delete 
+/*
 router.delete('/:id', (req, res, next) =>{
   try{
       const {id} = req.params
@@ -108,10 +136,10 @@ router.delete('/:id', (req, res, next) =>{
       next(error)
   }
 });
-
+*/
 
 //! Ruta put
-
+/*
 router.put("recipes/:id", async (req, res) => {
   const { id } = req.params;
   const {
@@ -147,7 +175,7 @@ router.put("recipes/:id", async (req, res) => {
     res.status(404).send("No se Actualizo");
   }
 });
-
+*/
 
 
 //** Error 404*/

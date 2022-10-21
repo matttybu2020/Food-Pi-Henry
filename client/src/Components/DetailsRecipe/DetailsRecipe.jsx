@@ -1,12 +1,8 @@
-
 import React from "react";
-
 import { Link,} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRecipesById,cleanFilter,add_Favorites} from "../../Redux/Actions/index";
+import { getRecipesById,add_Favorites,cleanFilter} from "../../Redux/Actions/index";
 import { useEffect } from "react";
-
-
 import "./DetailsRecipe.css"
 
 
@@ -33,8 +29,6 @@ console.log(myRecipe)
 
 const state = useSelector((state) => state);
 const { favorites } = state;
-
-
 
 const Add_Favorite = () => {
   let id_favorite = myRecipe.id;

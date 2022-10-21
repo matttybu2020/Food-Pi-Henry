@@ -37,13 +37,8 @@ return (
         placeholder="Busca tu receta.."
         onChange={handleInputChange}
         value={name}
-
         />
         <button type = 'submit'onClick={handleSubmit} className="button-recipe">Buscar</button>
-        
-        
-        
-        
-    </div>
+        </div>
 )
 }

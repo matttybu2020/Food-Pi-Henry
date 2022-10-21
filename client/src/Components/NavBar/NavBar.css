@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    padding-top: 1rem;
 }
 
 
@@ -12,6 +12,7 @@
     margin: 10px;
     border-radius: 10px;
 }
+
 .navbar-div button:hover {
     background-color: rgb(205, 210, 217);
     color: black;

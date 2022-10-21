@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID,FILTER_BY_TYPES_DIETS,ORDER_NAME,ORDER_SCORE,FILTER_ORIGEN,ADD_FAVORITES,REMOVE_FAVORITES} from "../Actions/Contantes"
+import {GET_ALL_RECIPES ,GET_ALL_TYPES,SAVE_PAGE,CLEAN_FILTER,GET_NAME,GET_RECIPES_BY_ID,FILTER_BY_TYPES_DIETS,ORDER_NAME,ORDER_SCORE,FILTER_ORIGEN,ADD_FAVORITES,REMOVE_FAVORITES,FILTRO_SCORE} from "../Actions/Contantes"
 
 
 
@@ -160,6 +160,22 @@ export function orderScore(payload){
         payload
     }
 }
+
+
+//* filtrado por Score Max 80
+
+
+export function filtroScore(payload){
+    return{
+        type:FILTRO_SCORE,
+        payload
+    }
+}
+
+
+
+
+
 
 
 //* Filtrado por Origen 

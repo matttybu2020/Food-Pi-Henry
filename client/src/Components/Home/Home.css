@@ -20,9 +20,6 @@
 }
 
 
-
-
-
 .contenedor-cards{
     
     display: grid;
@@ -31,8 +28,7 @@
     text-align: center;
     width: 60%;
     padding-bottom: 4rem;
-
-    
+  padding-top: 3rem;
    
 }
 .contenedor-cards a {

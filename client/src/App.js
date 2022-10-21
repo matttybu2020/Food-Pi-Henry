@@ -8,6 +8,8 @@ import About from "../src/Components/About/About.jsx";
 import Page404 from "../src/Components/Page404/Page404.jsx";
 import Favorites from "../src/Components/Favorites/Favorites.jsx"
 
+
+
 function App() {
   return (
     <BrowserRouter>

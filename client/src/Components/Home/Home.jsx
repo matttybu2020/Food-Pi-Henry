@@ -38,7 +38,6 @@ const paginado = (pageNumber) =>{
     setCurrentPage(pageNumber)
   } 
  
-
   function handlePage(e){
     dispatch(savePage(currentPage))
   }
@@ -65,7 +64,7 @@ const beforePage = () => {
 
  function handleRefresh(e){
     e.preventDefault()
-    //dispatch(cleanFilter())
+    dispatch(cleanFilter())
     dispatch(getAllRecipes())
   }
 
@@ -105,11 +104,10 @@ function handleFilterByOrigen(e){
 
 
     return (
-   <div className="homecontainer">     
-        <div className="contenedor">
-           
 
-            <div className="navbar-container">
+<div className="homecontainer">     
+        <div className="contenedor">
+         <div className="navbar-container">
 <NavBar />
 </div>
 
@@ -126,12 +124,10 @@ function handleFilterByOrigen(e){
         </div>
 
 
-
          <div className="contenedor-filtros">
          <select onChange={handleFilterByDiets} className="filtros">
            <option value = 'tipos'>Filtrar por tipo</option>
-          
-          <option value="gluten free">gluten free</option>
+           <option value="gluten free">gluten free</option>
            <option value ="dairy free">dairy free</option>
            <option value ="lacto vegetarian">lacto  vegetarian</option>
            <option value ="ovo vegetarian">ovo vegetarian</option>
@@ -164,6 +160,8 @@ function handleFilterByOrigen(e){
             <option value = "created">Creados</option>
             <option value = "api">Api</option>
          </select>
+
+        
          
 
 

@@ -131,7 +131,10 @@ function rootReducer(state = initialState, action) {
                     return {
                       ...state,
                       recipes: action.payload === 'default' ? state.recipes : sortScore
-                    }
+
+
+                    };
+                   
 
                     case FILTER_ORIGEN:
       const filterByOrigen = action.payload === "created"? state.allRecipes.filter(el=> el.createdInDb): state.allRecipes.filter(el=>!el.createdInDb)
@@ -153,12 +156,20 @@ function rootReducer(state = initialState, action) {
         favorites: state.favorites.filter( (recipe) => recipe.id !== action.payload
         ),
       };
-
-
-              
+ 
           default:
             return { ...state };
         }
     }
   
     export default rootReducer;
+
+
+
+
+   /* const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]*/

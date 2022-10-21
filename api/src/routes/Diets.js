@@ -25,6 +25,40 @@ router.get('/', async (_req, res) => {
 
 
 
+
+
+
+
+
+
+
+
+
+//!busqueda por dietas para buscador en el front 
+//!Probar -- crear action,contantes,reducer,componente ,funcion y boton
+/*
+
+router.get('/',async (req,res)=>{
+    const{ name } = req.query
+    const recipesDiet=   await InfoApiDbTotal()
+    try {
+    if(name){
+
+     const recipesDiet = recipesDiet.filter(el => el.name.toLowerCase().includes(name.toLowerCase()))
+     if(recipesDiet){
+       return  res.status(200).send(recipesDiet)
+     }
+    }
+    return res.status(200).send(recipesDiet)
+    } catch (error) {
+        console.log(error)
+     return   res.status(404).send('No existe ese tipo de dieta')
+    }
+})
+
+*/
+
+
    
 
 
