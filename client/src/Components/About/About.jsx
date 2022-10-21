@@ -15,7 +15,7 @@ export default function About() {
       <div className="con-about">
         <h1>👨‍💻 Proyecto Individual 👨‍💻</h1>
         <h1>Gonzalez Matias Enrique 🧑‍💻</h1>
-        <h1>Recetas  </h1>
+        <h1>Recetas Pi Henry </h1>
         <div className="div-foto">
           <img src={imagen} alt="foto"></img>
         </div>
